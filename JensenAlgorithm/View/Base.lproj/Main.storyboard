@@ -18,11 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QNx-RD-5Eh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="606.5"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO4-7j-y4N">
-                                <rect key="frame" x="0.0" y="615" width="375" height="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sO4-7j-y4N">
+                                <rect key="frame" x="0.0" y="141" width="375" height="20.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Algorithm">
                                         <attributes>
@@ -33,16 +30,21 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swiftSample" translatesAutoresizingMaskIntoConstraints="NO" id="QNx-RD-5Eh">
+                                <rect key="frame" x="0.0" y="466" width="375" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="g2Y-SU-hGH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="QNx-RD-5Eh" firstAttribute="trailing" secondItem="sO4-7j-y4N" secondAttribute="trailing" id="3dv-4I-Jej"/>
-                            <constraint firstItem="QNx-RD-5Eh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R45-Pv-tcT"/>
-                            <constraint firstItem="QNx-RD-5Eh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YeC-Gx-WjC"/>
-                            <constraint firstAttribute="bottom" secondItem="sO4-7j-y4N" secondAttribute="bottom" constant="20" symbolic="YES" id="YeF-Zh-dCc"/>
-                            <constraint firstItem="sO4-7j-y4N" firstAttribute="top" secondItem="QNx-RD-5Eh" secondAttribute="bottom" constant="20" id="Z10-G8-1NJ"/>
-                            <constraint firstAttribute="trailing" secondItem="QNx-RD-5Eh" secondAttribute="trailing" id="hMf-c4-mVY"/>
-                            <constraint firstItem="QNx-RD-5Eh" firstAttribute="leading" secondItem="sO4-7j-y4N" secondAttribute="leading" id="sMp-30-TT5"/>
+                            <constraint firstItem="sO4-7j-y4N" firstAttribute="trailing" secondItem="QNx-RD-5Eh" secondAttribute="trailing" id="7Md-oQ-Bay"/>
+                            <constraint firstAttribute="trailing" secondItem="sO4-7j-y4N" secondAttribute="trailing" id="H5g-At-Rlj"/>
+                            <constraint firstItem="sO4-7j-y4N" firstAttribute="leading" secondItem="QNx-RD-5Eh" secondAttribute="leading" id="Lwk-wh-oFF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QNx-RD-5Eh" secondAttribute="bottom" constant="60" id="QR3-cW-sRF"/>
+                            <constraint firstItem="sO4-7j-y4N" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="Tt1-C0-CtP"/>
+                            <constraint firstItem="sO4-7j-y4N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cv8-ji-HJW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,4 +58,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="swiftSample" width="1248" height="1244"/>
+    </resources>
 </document>
